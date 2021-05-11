@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/RokkinCat/jsonresume-theme-rokkincat/issues"
   },
-  "homepage": "https://github.com/RokkinCat/jsonresume-theme-rokkincat#readme"
+  "homepage": "https://github.com/RokkinCat/jsonresume-theme-rokkincat#readme",
+  "dependencies": {
+    "feather-icons": "^4.28.0",
+    "handlebars": "^4.7.7",
+    "micromark": "^2.11.4",
+    "postcss": "^8.2.15",
+    "postcss-inline-base64": "^6.2.1",
+    "striptags": "^3.1.1"
+  }
 }
