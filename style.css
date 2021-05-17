@@ -4,54 +4,63 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Sentinel';
   src: url("b64---./font/sentinel/Sentinel-Light-Italic.woff2---") format('woff2');
   font-weight: 300;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Sentinel';
   src: url("b64---./font/sentinel/Sentinel-Bold.woff2---") format('woff2');
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Sentinel';
   src: url("b64---./font/sentinel/Sentinel-Bold-Italic.woff2---") format('woff2');
   font-weight: bold;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Sentinel';
   src: url("b64---./font/sentinel/Sentinel-Medium.woff2---") format('woff2');
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Sentinel';
   src: url("b64---./font/sentinel/Sentinel-Medium-Italic.woff2---") format('woff2');
   font-weight: 500;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Sentinel';
   src: url("b64---./font/sentinel/Sentinel-Semibold.woff2---") format('woff2');
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Sentinel';
   src: url("b64---./font/sentinel/Sentinel-Semibold-Italic.woff2---") format('woff2');
   font-weight: 600;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Sentinel';
   src: url("b64---./font/sentinel/Sentinel-Black.woff2---") format('woff2');
   font-weight: 900;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Sentinel';
   src: url("b64---./font/sentinel/Sentinel-Black-Italic.woff2---") format('woff2');
@@ -95,8 +104,7 @@ body {
   margin-bottom: 4em;
 }
 
-ol,
-ul {
+ol, ul {
   padding-left: 1em;
 }
 
@@ -115,21 +123,15 @@ a {
   transition: color 0.2s;
 }
 
-a:focus,
-a:hover {
+a:focus, a:hover {
   color: var(--color-accent);
 }
 
-h1,
-h2,
-h3,
-h5 {
+h1, h2, h3, h5 {
   font-weight: normal;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   line-height: 1.2;
 }
 
@@ -199,8 +201,7 @@ svg {
   page-break-inside: avoid;
 }
 
-article > * + *,
-blockquote > * + * {
+article > * + *, blockquote > * + * {
   margin-top: 0.6em;
 }
 
