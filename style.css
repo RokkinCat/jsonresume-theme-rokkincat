@@ -191,14 +191,36 @@ svg {
   margin: auto;
 }
 
+.masthead > * {
+  /* align with section headers */
+  padding: 0 2em;
+  padding-left: calc(2em + 120px);
+}
+
 .masthead {
+  padding: 1em 0;
   background: var(--color-muted);
   display: inherit;
-  padding: 1.5em 0;
+}
+
+section {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: row;
 }
 
 .masthead, section {
   page-break-inside: avoid;
+}
+
+section h3:first-child {
+  min-width: 120px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+section .stack {
+  flex-grow: 1;
 }
 
 article > * + *, blockquote > * + * {
@@ -207,7 +229,6 @@ article > * + *, blockquote > * + * {
 
 .icon-list {
   list-style: none;
-  padding: 0;
 }
 
 .spaced-list {
