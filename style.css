@@ -210,7 +210,7 @@ svg {
   gap: inherit;
   grid-column: full;
   grid-template-columns: inherit;
-  padding: 4em 0;
+  padding: 1.5em 0;
 }
 
 .masthead > *,
