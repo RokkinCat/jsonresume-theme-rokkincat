@@ -261,3 +261,33 @@ article > * + *, blockquote > * + * {
   margin: 0 0.2em 0.2em 0;
   padding: 0.2em 0.6em;
 }
+
+.skills {
+  flex-grow: 1;
+}
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.skill:first-child {
+  padding-top: 0;
+}
+
+.skill h4 {
+  /* set score name to fixed with so bars align */
+  width: 200px;
+}
+
+.skill .score {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.skill .score .bar {
+  padding-left: 10px;
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}

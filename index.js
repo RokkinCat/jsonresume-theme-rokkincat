@@ -20,6 +20,26 @@ fs.readdirSync(partialsDir)
     Handlebars.registerPartial(path.basename(filename, extname), template)
   )
 
+Handlebars.registerHelper('join', arr =>
+  arr.join(', ')
+)
+
+Handlebars.registerHelper('levelToNumber', level => {
+  // anything less than 5 shouldn't be listed as a skill. more of a passing
+  // curiosity
+  if (level === 'Master') {
+    return 10
+  } else if (level === 'Senior') {
+    return 9
+  } else if (level === 'Junior') {
+    return 8
+  } else if (level === 'Novice') {
+    return 6
+  } else {
+    return 5
+  }
+})
+
 function regionNameToEnglish (countryCode) {
   return Intl.DisplayNames
     ? new Intl.DisplayNames(['en'], { type: 'region' }).of(countryCode)
