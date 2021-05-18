@@ -13,7 +13,7 @@
       {{#if city}}
         <li>
           {{{icon 'map-pin'}}}
-          {{city}}{{#countryCode}}, {{formatCountry .}}{{/countryCode}}
+          {{city}}, {{formatRegion region countryCode}}
         </li>
       {{/if}}
     {{/location}}

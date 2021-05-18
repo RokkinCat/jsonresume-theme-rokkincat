@@ -20,10 +20,16 @@ fs.readdirSync(partialsDir)
     Handlebars.registerPartial(path.basename(filename, extname), template)
   )
 
-Handlebars.registerHelper('formatCountry', countryCode =>
-  Intl.DisplayNames
+function regionNameToEnglish (countryCode) {
+  return Intl.DisplayNames
     ? new Intl.DisplayNames(['en'], { type: 'region' }).of(countryCode)
     : countryCode
+}
+
+Handlebars.registerHelper('formatRegion', (region, countryCode) =>
+  countryCode === 'US'
+    ? region
+    : regionNameToEnglish(countryCode)
 )
 
 Handlebars.registerHelper('formatDate', dateString =>
