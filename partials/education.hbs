@@ -15,17 +15,20 @@
               {{/if}}
             </div>
             <div class="spaced-list">
-              {{#area}}
-                <em>{{.}}</em>
-              {{/area}}
+              <em>
+                {{#studyType}}
+                  {{{.}}}
+                {{/studyType}}
+                of
+                {{#area}}
+                    {{.}}
+                {{/area}}
+              </em>
               {{#url}}
                 <a href="{{.}}">{{formatURL .}}</a>
               {{/url}}
             </div>
           </header>
-          {{#studyType}}
-            {{{markdown .}}}
-          {{/studyType}}
           {{#if courses.length}}
             <p>Courses:</p>
             <ul>
