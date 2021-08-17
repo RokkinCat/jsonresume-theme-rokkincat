@@ -209,8 +209,13 @@ section {
   flex-direction: row;
 }
 
-.masthead, section {
+.masthead, section, article {
   page-break-inside: avoid;
+}
+
+/* articles (companies) are logical breakpoints in work section */
+section#work {
+  break-inside: auto
 }
 
 section h3:first-child {
