@@ -228,6 +228,14 @@ section .stack {
   flex-grow: 1;
 }
 
+article {
+  margin-bottom: 0.6em;
+}
+
+article:last-child {
+  margin-bottom: 0;
+}
+
 article > * + *, blockquote > * + * {
   margin-top: 0.6em;
 }
